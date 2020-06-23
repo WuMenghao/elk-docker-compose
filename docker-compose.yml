@@ -1,0 +1,99 @@
+version: '2.2'
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: es01
+    environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - xpack.monitoring.collection.enabled=true
+      - path.data=/var/lib/elasticsearch
+      - path.logs=/var/log/elasticsearch
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - 'D:/workspace_docker/elk/elasticsearch/data/es01:/var/lib/elasticsearch'
+      - 'D:/workspace_docker/elk/elasticsearch/log/es01:/var/log/elasticsearch'
+      # - 'D:/workspace_docker/elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml'
+    ports:
+      - 9200:9200
+    networks:
+      - elastic
+  es02:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: es02
+    environment:
+      - node.name=es02
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es01,es03
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - xpack.monitoring.collection.enabled=true
+      - path.data=/var/lib/elasticsearch
+      - path.logs=/var/log/elasticsearch
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - 'D:/workspace_docker/elk/elasticsearch/data/es02:/var/lib/elasticsearch'
+      - 'D:/workspace_docker/elk/elasticsearch/log/es02:/var/log/elasticsearch'
+      # - 'D:/workspace_docker/elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml'
+    networks:
+      - elastic
+  es03:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: es03
+    environment:
+      - node.name=es03
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es01,es02
+      - cluster.initial_master_nodes=es01,es02,es03
+      - xpack.monitoring.collection.enabled=true
+      - bootstrap.memory_lock=true
+      - path.data=/var/lib/elasticsearch
+      - path.logs=/var/log/elasticsearch
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - 'D:/workspace_docker/elk/elasticsearch/data/es03:/var/lib/elasticsearch'
+      - 'D:/workspace_docker/elk/elasticsearch/log/es03:/var/log/elasticsearch'
+      # - 'D:/workspace_docker/elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml'
+    networks:
+      - elastic
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.8.0
+    container_name: kb01
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_HOSTS: http://es01:9200
+      MONITORING_ENABLED: 'true'
+    ports:
+      - '5601:5601'
+    depends_on:
+      - es01
+    networks:
+      - elastic
+
+volumes:
+  data01:
+    driver: local
+  data02:
+    driver: local
+  data03:
+    driver: local
+
+networks:
+  elastic:
+    driver: bridge

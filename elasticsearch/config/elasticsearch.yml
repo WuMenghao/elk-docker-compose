@@ -1,0 +1,19 @@
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+http.port: 9200
+transport.tcp.port: 9300
+# 如果是多节点es，通过ping来健康检查
+# discovery.zen.minimum_master_nodes: 1
+# discovery.zen.ping.unicast.hosts: ["*.*.*.*:9300", "*.*.*.*:9301","*.*.*.*:9302"]
+# discovery.zen.fd.ping_timeout: 120s
+# discovery.zen.fd.ping_retries: 3
+# discovery.zen.fd.ping_interval: 30s
+# cluster.info.update.interval: 1m
+xpack.security.enabled: false
+xpack.monitoring.collection.enabled: true
+indices.fielddata.cache.size:  20%
+indices.breaker.total.limit: 60%
+indices.recovery.max_bytes_per_sec: 100mb
+indices.memory.index_buffer_size: 20%
+script.painless.regex.enabled: true
