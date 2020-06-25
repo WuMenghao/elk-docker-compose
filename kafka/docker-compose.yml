@@ -1,0 +1,25 @@
+version: '2'
+services:
+  zookeeper:
+    container_name: zk01
+    image: develop-harbor.geostar.com.cn/3rd/zookeeper:3.5.5
+    ports:
+      - "2181:2181"
+    network:
+      - kafka
+  kafka:
+    container_name: kafka01
+    image: develop-harbor.geostar.com.cn/3rd/wurstmeister/kafka:2.12-2.2.1
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: zk01
+      KAFKA_ZOOKEEPER_CONNECT: zk01:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    network:
+      - kafka
+
+networks:
+  kafka:
+    driver: bridge
