@@ -30,20 +30,3 @@ services:
     environment:
       ZOO_MY_ID: 3
       ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=0.0.0.0:2888:3888;2181
-
-  kafka1:
-    image: tmwmh/kafka:1.0v
-    restart: always
-    hostname: kafka1
-    ports:
-      - 9091:9091
-    environment:
-      broker_id: 0
-      listeners: PLAINTEXT://:9092
-      log_dirs: /tmp/kafka-logs-2
-      zookeeper_connect: zoo1:2181,zoo2:2181,zoo3:2181
-
-
-networks:
-  elastic:
-    driver: kafka
