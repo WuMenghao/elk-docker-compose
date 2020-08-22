@@ -19,9 +19,8 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - 'D:/workspace_docker/elk/elasticsearch/data/es01:/var/lib/elasticsearch'
-      - 'D:/workspace_docker/elk/elasticsearch/log/es01:/var/log/elasticsearch'
-      # - 'D:/workspace_docker/elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml'
+      - './elasticsearch/data/es01:/var/lib/elasticsearch'
+      - './elasticsearch/log/es01:/var/log/elasticsearch'
     ports:
       - 9200:9200
     networks:
@@ -45,9 +44,8 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - 'D:/workspace_docker/elk/elasticsearch/data/es02:/var/lib/elasticsearch'
-      - 'D:/workspace_docker/elk/elasticsearch/log/es02:/var/log/elasticsearch'
-      # - 'D:/workspace_docker/elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml'
+      - './elasticsearch/data/es02:/var/lib/elasticsearch'
+      - './elasticsearch/log/es02:/var/log/elasticsearch'
     networks:
       - elastic
   es03:
@@ -69,9 +67,8 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - 'D:/workspace_docker/elk/elasticsearch/data/es03:/var/lib/elasticsearch'
-      - 'D:/workspace_docker/elk/elasticsearch/log/es03:/var/log/elasticsearch'
-      # - 'D:/workspace_docker/elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml'
+      - './elasticsearch/data/es03:/var/lib/elasticsearch'
+      - './elasticsearch/log/es03:/var/log/elasticsearch'
     networks:
       - elastic
 
