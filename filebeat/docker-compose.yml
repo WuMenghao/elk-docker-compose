@@ -1,0 +1,31 @@
+version: '2.2'
+services:
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.8.0
+    restart: always
+    container_name: lgs01
+    environment: 
+      - monitoring.elasticsearch.hosts=http://es01:9200
+      - http.host=0.0.0.0
+      - monitoring.enabled=false
+    ports:
+      - 5000:5000
+    volumes: 
+      - ../logstash/config/filebeat.conf:/usr/share/logstash/pipeline/logstash.conf
+    networks:
+      - elk-docker-compose_elastic
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:7.8.0
+    entrypoint: bash -c 'export PATH=$PATH:/usr/share/filebeat && /usr/local/bin/docker-entrypoint -e -c /usr/share/filebeat/filebeat.yml'
+    restart: always
+    container_name: fb01
+    volumes: 
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - /Users/menghaowu/IdeaProjects/tarzan-java/logs/tarzan-info.log:/var/log/tarzan-info.log:ro
+    networks:
+      - elk-docker-compose_elastic
+
+networks: 
+  elk-docker-compose_elastic:
+    external: true

@@ -1,0 +1,225 @@
+2020-08-22 20:59:49,007 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Starting TarzanApplication on MenghaodeMacBook-Pro.local with PID 5384 (/Users/menghaowu/IdeaProjects/tarzan-java/tarzan/target/classes started by menghaowu in /Users/menghaowu/IdeaProjects/tarzan-java)
+2020-08-22 20:59:49,017 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - The following profiles are active: dev
+2020-08-22 20:59:49,981 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-22 20:59:49,984 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-22 20:59:50,027 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2020-08-22 20:59:50,688 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2020-08-22 20:59:50,697 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-22 20:59:50,697 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2020-08-22 20:59:50,697 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-22 20:59:50,787 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring embedded WebApplicationContext
+2020-08-22 20:59:50,788 [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1732 ms
+2020-08-22 20:59:51,637 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2020-08-22 20:59:51,651 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-22 20:59:51,651 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.2 created.
+2020-08-22 20:59:51,661 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Starting...
+2020-08-22 20:59:51,938 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Start completed.
+2020-08-22 20:59:51,972 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Using db table-based data access locking (synchronization).
+2020-08-22 20:59:51,974 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - JobStoreCMT initialized.
+2020-08-22 20:59:51,974 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'TarzanLocalScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2020-08-22 20:59:51,974 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'TarzanLocalScheduler' initialized from an externally provided properties instance.
+2020-08-22 20:59:51,974 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.2
+2020-08-22 20:59:51,975 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4d4c4b14
+2020-08-22 20:59:52,534 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowired annotation is not supported on static fields: private static cn.duyansoft.tarzan.config.SystemConfig cn.duyansoft.tarzan.util.OSSClientUtil.systemConfig
+2020-08-22 20:59:53,191 [main] INFO  [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-22 20:59:53,301 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-22 20:59:53,658 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-22 20:59:53,679 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path '/tarzan'
+2020-08-22 20:59:53,680 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2020-08-22 20:59:53,696 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2020-08-22 20:59:53,726 [main] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2020-08-22 20:59:54,045 [main] INFO  [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator] - Generating unique operation named: contractSignUsingGET_1
+2020-08-22 20:59:54,315 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2020-08-22 20:59:54,399 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Freed 0 triggers from 'acquired' / 'blocked' state.
+2020-08-22 20:59:54,417 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2020-08-22 20:59:54,417 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovery complete.
+2020-08-22 20:59:54,424 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 'complete' triggers.
+2020-08-22 20:59:54,438 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 stale fired job entries.
+2020-08-22 20:59:54,458 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED started.
+2020-08-22 20:59:54,477 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Started TarzanApplication in 5.747 seconds (JVM running for 12.368)
+2020-08-22 20:59:59,533 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-22 20:59:59,534 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2020-08-22 20:59:59,542 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 8 ms
+2020-08-22 21:19:29,335 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:19:29,379 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:19:29,420 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Shutting down Quartz Scheduler
+2020-08-22 21:19:29,420 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutting down.
+2020-08-22 21:19:29,420 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:19:29,421 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-22 21:19:29,424 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown initiated...
+2020-08-22 21:19:29,429 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown completed.
+2020-08-22 21:19:51,038 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Starting TarzanApplication on MenghaodeMacBook-Pro.local with PID 5528 (/Users/menghaowu/IdeaProjects/tarzan-java/tarzan/target/classes started by menghaowu in /Users/menghaowu/IdeaProjects/tarzan-java)
+2020-08-22 21:19:51,042 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - The following profiles are active: dev
+2020-08-22 21:19:51,911 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-22 21:19:51,914 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-22 21:19:51,954 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-08-22 21:19:52,583 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2020-08-22 21:19:52,591 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-22 21:19:52,592 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2020-08-22 21:19:52,592 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-22 21:19:52,675 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring embedded WebApplicationContext
+2020-08-22 21:19:52,675 [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1601 ms
+2020-08-22 21:19:53,447 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2020-08-22 21:19:53,458 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-22 21:19:53,458 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.2 created.
+2020-08-22 21:19:53,468 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Starting...
+2020-08-22 21:19:53,725 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Start completed.
+2020-08-22 21:19:53,741 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Using db table-based data access locking (synchronization).
+2020-08-22 21:19:53,743 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - JobStoreCMT initialized.
+2020-08-22 21:19:53,744 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'TarzanLocalScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2020-08-22 21:19:53,744 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'TarzanLocalScheduler' initialized from an externally provided properties instance.
+2020-08-22 21:19:53,744 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.2
+2020-08-22 21:19:53,744 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7ec508e6
+2020-08-22 21:19:54,237 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowired annotation is not supported on static fields: private static cn.duyansoft.tarzan.config.SystemConfig cn.duyansoft.tarzan.util.OSSClientUtil.systemConfig
+2020-08-22 21:19:54,806 [main] INFO  [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-22 21:19:54,909 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:19:55,231 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-22 21:19:55,248 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path '/tarzan'
+2020-08-22 21:19:55,249 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2020-08-22 21:19:55,263 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2020-08-22 21:19:55,292 [main] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2020-08-22 21:19:55,588 [main] INFO  [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator] - Generating unique operation named: contractSignUsingGET_1
+2020-08-22 21:19:55,834 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2020-08-22 21:19:55,894 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Freed 0 triggers from 'acquired' / 'blocked' state.
+2020-08-22 21:19:55,909 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2020-08-22 21:19:55,909 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovery complete.
+2020-08-22 21:19:55,916 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 'complete' triggers.
+2020-08-22 21:19:55,923 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 stale fired job entries.
+2020-08-22 21:19:55,938 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED started.
+2020-08-22 21:19:55,947 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Started TarzanApplication in 5.157 seconds (JVM running for 11.35)
+2020-08-22 21:30:35,980 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:30:36,005 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:30:36,025 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Shutting down Quartz Scheduler
+2020-08-22 21:30:36,025 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutting down.
+2020-08-22 21:30:36,025 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:30:36,025 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-22 21:30:36,027 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown initiated...
+2020-08-22 21:30:36,031 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown completed.
+2020-08-22 21:30:57,629 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Starting TarzanApplication on MenghaodeMacBook-Pro.local with PID 5623 (/Users/menghaowu/IdeaProjects/tarzan-java/tarzan/target/classes started by menghaowu in /Users/menghaowu/IdeaProjects/tarzan-java)
+2020-08-22 21:30:57,632 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - The following profiles are active: dev
+2020-08-22 21:30:58,478 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-22 21:30:58,481 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-22 21:30:58,523 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-08-22 21:30:59,147 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2020-08-22 21:30:59,154 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-22 21:30:59,154 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2020-08-22 21:30:59,155 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-22 21:30:59,235 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring embedded WebApplicationContext
+2020-08-22 21:30:59,235 [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1568 ms
+2020-08-22 21:30:59,981 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2020-08-22 21:30:59,993 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-22 21:30:59,993 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.2 created.
+2020-08-22 21:31:00,003 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Starting...
+2020-08-22 21:31:00,406 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Start completed.
+2020-08-22 21:31:00,416 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Using db table-based data access locking (synchronization).
+2020-08-22 21:31:00,418 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - JobStoreCMT initialized.
+2020-08-22 21:31:00,419 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'TarzanLocalScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2020-08-22 21:31:00,419 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'TarzanLocalScheduler' initialized from an externally provided properties instance.
+2020-08-22 21:31:00,419 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.2
+2020-08-22 21:31:00,419 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@13374ca6
+2020-08-22 21:31:01,061 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowired annotation is not supported on static fields: private static cn.duyansoft.tarzan.config.SystemConfig cn.duyansoft.tarzan.util.OSSClientUtil.systemConfig
+2020-08-22 21:31:01,612 [main] INFO  [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-22 21:31:01,787 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:31:02,154 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-22 21:31:02,172 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path '/tarzan'
+2020-08-22 21:31:02,173 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2020-08-22 21:31:02,188 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2020-08-22 21:31:02,218 [main] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2020-08-22 21:31:02,538 [main] INFO  [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator] - Generating unique operation named: contractSignUsingGET_1
+2020-08-22 21:31:02,768 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2020-08-22 21:31:02,870 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Freed 0 triggers from 'acquired' / 'blocked' state.
+2020-08-22 21:31:02,891 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2020-08-22 21:31:02,891 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovery complete.
+2020-08-22 21:31:02,899 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 'complete' triggers.
+2020-08-22 21:31:02,909 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 stale fired job entries.
+2020-08-22 21:31:02,926 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED started.
+2020-08-22 21:31:02,936 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Started TarzanApplication in 5.545 seconds (JVM running for 11.657)
+2020-08-22 21:31:06,783 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-22 21:31:06,783 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2020-08-22 21:31:06,792 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 9 ms
+2020-08-22 21:31:44,855 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:31:44,886 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:31:44,906 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Shutting down Quartz Scheduler
+2020-08-22 21:31:44,906 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutting down.
+2020-08-22 21:31:44,906 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:31:44,907 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-22 21:31:44,909 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown initiated...
+2020-08-22 21:31:44,914 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown completed.
+2020-08-22 21:32:04,244 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Starting TarzanApplication on MenghaodeMacBook-Pro.local with PID 5657 (/Users/menghaowu/IdeaProjects/tarzan-java/tarzan/target/classes started by menghaowu in /Users/menghaowu/IdeaProjects/tarzan-java)
+2020-08-22 21:32:04,248 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - The following profiles are active: dev
+2020-08-22 21:32:05,110 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-22 21:32:05,112 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-22 21:32:05,153 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-08-22 21:32:05,759 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2020-08-22 21:32:05,767 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-22 21:32:05,768 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2020-08-22 21:32:05,768 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-22 21:32:05,861 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring embedded WebApplicationContext
+2020-08-22 21:32:05,861 [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1580 ms
+2020-08-22 21:32:06,600 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2020-08-22 21:32:06,612 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-22 21:32:06,613 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.2 created.
+2020-08-22 21:32:06,622 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Starting...
+2020-08-22 21:32:06,863 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Start completed.
+2020-08-22 21:32:06,879 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Using db table-based data access locking (synchronization).
+2020-08-22 21:32:06,882 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - JobStoreCMT initialized.
+2020-08-22 21:32:06,883 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'TarzanLocalScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2020-08-22 21:32:06,883 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'TarzanLocalScheduler' initialized from an externally provided properties instance.
+2020-08-22 21:32:06,883 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.2
+2020-08-22 21:32:06,883 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@d0a2c82
+2020-08-22 21:32:07,332 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowired annotation is not supported on static fields: private static cn.duyansoft.tarzan.config.SystemConfig cn.duyansoft.tarzan.util.OSSClientUtil.systemConfig
+2020-08-22 21:32:07,880 [main] INFO  [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-22 21:32:08,021 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:32:08,341 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-22 21:32:08,357 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path '/tarzan'
+2020-08-22 21:32:08,358 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2020-08-22 21:32:08,372 [main] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2020-08-22 21:32:08,400 [main] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2020-08-22 21:32:08,694 [main] INFO  [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator] - Generating unique operation named: contractSignUsingGET_1
+2020-08-22 21:32:08,905 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2020-08-22 21:32:08,970 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Freed 0 triggers from 'acquired' / 'blocked' state.
+2020-08-22 21:32:08,986 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2020-08-22 21:32:08,987 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Recovery complete.
+2020-08-22 21:32:08,994 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 'complete' triggers.
+2020-08-22 21:32:09,001 [main] INFO  [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - Removed 0 stale fired job entries.
+2020-08-22 21:32:09,020 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED started.
+2020-08-22 21:32:09,029 [main] INFO  [cn.duyansoft.tarzan.TarzanApplication] - Started TarzanApplication in 5.028 seconds (JVM running for 10.956)
+2020-08-22 21:33:18,632 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/tarzan]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-22 21:33:18,632 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2020-08-22 21:33:18,643 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 11 ms
+2020-08-22 21:45:09,360 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:45:09,398 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-22 21:45:09,420 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Shutting down Quartz Scheduler
+2020-08-22 21:45:09,420 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutting down.
+2020-08-22 21:45:09,420 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED paused.
+2020-08-22 21:45:09,420 [SpringContextShutdownHook] INFO  [org.quartz.core.QuartzScheduler] - Scheduler TarzanLocalScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-22 21:45:09,423 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown initiated...
+2020-08-22 21:45:09,431 [SpringContextShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariCP - Shutdown completed.

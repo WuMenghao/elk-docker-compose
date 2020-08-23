@@ -2,8 +2,8 @@ filebeat.inputs:
   - type: log
     enabled: true
     paths:
-      - "D:\\data\\logs\\brill_lab_ent\\brill_lab_ent_starter.log"
+      - "/var/log/tarzan-info.log"
       
 output:
   logstash:
-    hosts: ["localhost:5000"]
+    hosts: ["lgs01:5000"]
