@@ -7,8 +7,8 @@ services:
     environment:
       - node.name=es01
       - cluster.name=es-docker-cluster
-      - discovery.seed_hosts=es02,es03
-      - cluster.initial_master_nodes=es01,es02,es03
+      # - discovery.seed_hosts=es02,es03
+      - cluster.initial_master_nodes=es01 #,es02,es03
       - bootstrap.memory_lock=true
       - xpack.monitoring.collection.enabled=true
       - path.data=/var/lib/elasticsearch
@@ -25,52 +25,52 @@ services:
       - 9200:9200
     networks:
       - elastic
-  es02:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
-    restart: always
-    container_name: es02
-    environment:
-      - node.name=es02
-      - cluster.name=es-docker-cluster
-      - discovery.seed_hosts=es01,es03
-      - cluster.initial_master_nodes=es01,es02,es03
-      - bootstrap.memory_lock=true
-      - xpack.monitoring.collection.enabled=true
-      - path.data=/var/lib/elasticsearch
-      - path.logs=/var/log/elasticsearch
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    volumes:
-      - './elasticsearch/data/es02:/var/lib/elasticsearch'
-      - './elasticsearch/log/es02:/var/log/elasticsearch'
-    networks:
-      - elastic
-  es03:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
-    restart: always
-    container_name: es03
-    environment:
-      - node.name=es03
-      - cluster.name=es-docker-cluster
-      - discovery.seed_hosts=es01,es02
-      - cluster.initial_master_nodes=es01,es02,es03
-      - xpack.monitoring.collection.enabled=true
-      - bootstrap.memory_lock=true
-      - path.data=/var/lib/elasticsearch
-      - path.logs=/var/log/elasticsearch
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    volumes:
-      - './elasticsearch/data/es03:/var/lib/elasticsearch'
-      - './elasticsearch/log/es03:/var/log/elasticsearch'
-    networks:
-      - elastic
+  # es02:
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+  #   restart: always
+  #   container_name: es02
+  #   environment:
+  #     - node.name=es02
+  #     - cluster.name=es-docker-cluster
+  #     - discovery.seed_hosts=es01,es03
+  #     - cluster.initial_master_nodes=es01,es02,es03
+  #     - bootstrap.memory_lock=true
+  #     - xpack.monitoring.collection.enabled=true
+  #     - path.data=/var/lib/elasticsearch
+  #     - path.logs=/var/log/elasticsearch
+  #     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  #   ulimits:
+  #     memlock:
+  #       soft: -1
+  #       hard: -1
+  #   volumes:
+  #     - './elasticsearch/data/es02:/var/lib/elasticsearch'
+  #     - './elasticsearch/log/es02:/var/log/elasticsearch'
+  #   networks:
+  #     - elastic
+  # es03:
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+  #   restart: always
+  #   container_name: es03
+  #   environment:
+  #     - node.name=es03
+  #     - cluster.name=es-docker-cluster
+  #     - discovery.seed_hosts=es01,es02
+  #     - cluster.initial_master_nodes=es01,es02,es03
+  #     - xpack.monitoring.collection.enabled=true
+  #     - bootstrap.memory_lock=true
+  #     - path.data=/var/lib/elasticsearch
+  #     - path.logs=/var/log/elasticsearch
+  #     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  #   ulimits:
+  #     memlock:
+  #       soft: -1
+  #       hard: -1
+  #   volumes:
+  #     - './elasticsearch/data/es03:/var/lib/elasticsearch'
+  #     - './elasticsearch/log/es03:/var/log/elasticsearch'
+  #   networks:
+  #     - elastic
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.8.0
@@ -91,10 +91,10 @@ services:
 volumes:
   data01:
     driver: local
-  data02:
-    driver: local
-  data03:
-    driver: local
+  # data02:
+  #   driver: local
+  # data03:
+  #   driver: local
 
 networks:
   elastic:
